@@ -57,14 +57,17 @@ $('a').on('click', function(){
 	console.log(selected);
 	$('form').show("slow");
 	$('#msg').text('you have selected seat ' + selected);
-  $('form .btn').on('click', function() {
+ 	$('form .btn').on('click', function() {
 	var firstName = $('#firstNameInput').val();
 	var lastName = $('#lastNameInput').val();
 	console.log(firstName + " " + lastName);
 	//alert(selected);
 		});
 
-	});
-
-
+	}).parent().popover({
+				placement: 'bottom',
+                trigger: 'hover',
+                content: "this seat is available"
+						});
+	
 });
