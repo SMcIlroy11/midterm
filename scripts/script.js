@@ -42,8 +42,9 @@ $('.seat > a').on('click', function(){
 	//adds a class of checkout so that user is reaffirmed of their choice
 	$(this).parent().addClass("checkout");
 })
-
+//global variables to help make functions and shit work
 var circusSeats = [];
+var patron;
 
 //once the submit button is clicked, execute the following
 $('form .btn').on('click', function() {
@@ -62,18 +63,19 @@ $('form .btn').on('click', function() {
 	console.log(selected)
 	//for each seat that was put into checkout, make them unavailable to other buyers
 	$('.seat').each(function(){
-    if($(this).hasClass('checkout')) {
-        $(this).addClass('disabled').removeClass('checkout');
-    		}
-		}).append('<div class = "hoverdiv">info go here</div>');
-console.log(circusSeats);
+    if($(this).hasClass('checkout')) { //change classes after values are submitted
+        $(this).addClass('disabled').removeClass('checkout').data("firstname", firstName); 
+        patron = $(this).data(); console.log(patron)
+    		} //append new div to hover over reserved seats with patron name in it
+		}).append('<div class = "hoverdiv">' + patron.firstname + ' </div>');
+		
 
-var seatList = document.getElementById("circusSeats");
-for (var i=0; i <circusSeats.length; i++) {
-  var reservedSeat = document.createElement("li");
-  reservedSeat.innerText = "First Name: " + circusSeats[i].firstName + " and Last name " + circusSeats[i].lastName + " and the seat number is " + circusSeats[i].seats;
-seatList.appendChild(reservedSeat);
-}
+		/*var seatList = document.getElementById("circusSeats");
+		for (var i=0; i <circusSeats.length; i++) {
+		var reservedSeat = document.createElement("li");
+		reservedSeat.innerText = "First Name: " + circusSeats[i].firstName + " and Last name " + circusSeats[i].lastName + " and the seat number is " + circusSeats[i].seats;
+		seatList.appendChild(reservedSeat);
+		}*/
 	});
 
 $('form').hide();

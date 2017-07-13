@@ -70,7 +70,7 @@ form {
     background-color: #eee;
     z-index: 10;
 }
-
+/* make child of disabled class divs (hoverdiv) appear as block instead of displaying as none */
 .disabled:hover > .hoverdiv {
 	display:block;
 }
