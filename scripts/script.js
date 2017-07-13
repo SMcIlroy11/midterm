@@ -7,7 +7,12 @@ $('form').hide();
 $('.seat').hover(
        function(){ $(this).addClass('hovering') },
        function(){ $(this).removeClass('hovering') }
-)/*.on('click', function(){
+).popover({
+			placement: 'bottom',
+            trigger: 'hover',
+            content: "this seat is available"
+	});
+/*.on('click', function(){
 
 $('form').show("slow");
 
@@ -54,20 +59,19 @@ $('form').hide("slow");
 //less convoluted version of above function
 $('a').on('click', function(){
 	var selected = $(this).attr("id");
-	console.log(selected);
+	//console.log(selected);
 	$('form').show("slow");
 	$('#msg').text('you have selected seat ' + selected);
  	$('form .btn').on('click', function() {
 	var firstName = $('#firstNameInput').val();
 	var lastName = $('#lastNameInput').val();
-	console.log(firstName + " " + lastName);
+	//console.log(firstName + " " + lastName);
 	//alert(selected);
-		});
+		}).on('click', function(){
+			$('form').hide("slow")
+			
+		}); console.log($(this))
 
-	}).parent().popover({
-				placement: 'bottom',
-                trigger: 'hover',
-                content: "this seat is available"
-						});
+	});
 	
 });
