@@ -20,7 +20,7 @@ $('form').show("slow");
   $('form .btn').on('click', function() {
 var firstName = $('#firstNameInput').val();
 var lastName = $('#lastNameInput').val();
-var seats = $('#chooseNumSeats').val();
+var seats = $('#msg').val();
 
     circusSeats.push({
       'firstName': firstName,
@@ -41,6 +41,7 @@ $('form').hide("slow");
   $('form').show("slow");
   $('#msg').text('you have selected seat ' + selected);
   $('form .btn').on('click', function() {
+<<<<<<< HEAD
 	var firstName = $('#firstNameInput').val();
 	var lastName = $('#lastNameInput').val();
 	console.log(firstName + " " + lastName);
@@ -61,10 +62,9 @@ $('a').on('click', function(){
 	var lastName = $('#lastNameInput').val();
 	console.log(firstName + " " + lastName);
 	//alert(selected);
-	});
+		});
 
-})
+	});
 
 
 });
-
