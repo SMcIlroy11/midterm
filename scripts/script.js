@@ -78,6 +78,12 @@ $('form .btn').on('click', function() {
 		});
 console.log(circusSeats);
 
+var seatList = document.getElementById("B5");
+for (var i=0; i <circusSeats.length; i++) {
+  var reservedSeat = document.createElement("li");
+  reservedSeat.innerText = "First Name: " + circusSeats[i].firstName + " and Last name " + circusSeats[i].lastName + " and the seat number is " + circusSeats[i].seats;
+seatList.appendChild(reservedSeat);
+}
 	});
 
 });
