@@ -1,12 +1,19 @@
 $(document).ready(function() {
 
-console.log('Have fun!');
+
+$('form').hide();
 
 //hover over seat and give it a new class
 $('.seat').hover(
        function(){ $(this).addClass('hovering') },
        function(){ $(this).removeClass('hovering') }
-);
+).on('click', function(){
+
+$('form').show("slow");
+
+
+
+});
 
 var circusSeats = [];
 
@@ -23,20 +30,12 @@ var seats = $('#chooseNumSeats').val();
 
   }).on('click', function(){
 console.log(circusSeats);
+$('form').hide("slow");
 
   });
 
 
-
-
-
-
-
-
 });
 
-var selected = $('div > div.seat').children("a").attr("id");
 
-$('.seat').click(function() {
-  alert( "id of seat is " + selected);
 });
