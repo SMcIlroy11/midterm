@@ -1,7 +1,7 @@
 .container {
 	background: aqua;
 	width: 600px;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 
 .column-left {
@@ -35,4 +35,13 @@
 
 .hovering {
 	background: #f5f5f5;
+}
+
+form {
+  width: 60%;
+  margin-left: 10%;
+
+}
+#chooseNumSeats {
+  width: 15%;
 }

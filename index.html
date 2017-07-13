@@ -10,20 +10,20 @@
 </head>
 
 <body>
-  <div class="header">  	
+  <div class="header">
   </div>
   <div class="container">
  		<div class="column-left">
   			<div class="bench row-a">
   				<div class="seat">
   					<a id="seatA1" href="#">1</a>
-  				</div>            
+  				</div>
   				<div class="seat">
   					<a id="seatA2" href="#">2</a>
-  				</div>        
+  				</div>
   				<div class="seat">
   					<a id="seatA3" href="#">3</a>
-  				</div>     			
+  				</div>
       			<div class="seat">
       				<a id="seatA4" href="#">4</a>
       			</div>
@@ -31,22 +31,22 @@
   			<div class="bench row-b">
   				<div class="seat">
   					<a id="seatB1" href="#">1</a>
-  				</div>           		
+  				</div>
   				<div class="seat">
   					  <a id="seatB2" href="#">2</a>
-  				</div>         
+  				</div>
   				<div class="seat">
   					<a id="seatB3" href="#">3</a>
-  				</div>         
+  				</div>
   				<div class="seat">
   					<a id="seatB4" href="#">4</a>
-  				</div>  
+  				</div>
   			</div>
   			<div class="bench row-c">
   				<div class="seat">
   					<a id="seatC1" href="#">1</a>
   				</div>
-          
+
   				<div class="seat">
   					<a id="seatC2" href="#">2</a>
   				</div>
@@ -54,28 +54,28 @@
   				<div class="seat">
   					<a id="seatC3" href="#">3</a>
   				</div>
-          
+
   				<div class="seat">
   					<a id="seatC4" href="#">4</a>
-  				</div> 
+  				</div>
   			</div>
   		</div>
   		<div class="column-right">
   			<div class="bench row-a">
   				<div class="seat">
   					<a id="seatA5" href="#">5</a>
-  				</div>          
+  				</div>
   				<div class="seat">
   					<a id="seatA6" href="#">6</a>
   				</div>
   				<div class="seat">
   					 <a id="seatA7" href="#">7</a>
   				</div>
-        
+
   				<div class="seat">
   					  <a id="seatA8" href="#">8</a>
   				</div>
-          
+
   			</div>
   			<div class="bench row-b">
   				<div class="seat">
@@ -94,19 +94,69 @@
   			<div class="bench row-c">
   				<div class="seat">
 		       		<a id="seatC5" href="#">5</a>
-  				</div>  
+  				</div>
   				<div class="seat">
 				   	<a id="seatC6" href="#">6</a>
-  				</div>      
+  				</div>
   				<div class="seat">
 					<a id="seatC7" href="#">7</a>
   				</div>
   				<div class="seat">
   					<a id="seatC8" href="#">8</a>
-  				</div>   
+  				</div>
   			</div>
   		</div>
   </div>
+
+
+    <form>
+      <!-- //First Name portion of form// -->
+      <div class="form-group">
+        <label for="firstNameInput">First Name</label>
+        <input type="firstName" class="form-control" id="firstNameInput"  placeholder="Enter your first name">
+      </div>
+      <!-- //last name portion of form// -->
+
+      <div class="form-group">
+        <label for="lastNameInput">Last Name</label>
+        <input type="lastName" class="form-control" id="lastNameInput" placeholder="Enter your last name">
+      </div>
+
+      <!-- Choosing seats -->
+      <div class="form-group">
+        <label for="chooseNumSeats">Choose which seats you would like to reserve:</label>
+        <select class="form-control" id="chooseNumSeats">
+          <option id="seatA1">A1</option>
+            <option id="seatA2">A2</option>
+              <option id="seatA3">A3</option>
+                <option id="seatA4">A4</option>
+                  <option id="seatA5">A5</option>
+                    <option id="seatA6">A6</option>
+                        <option id="seatA6">A7</option>
+                            <option id="seatA6">A8</option>
+                                <option id="seatA6">A9</option>
+        </select>
+      </div>
+
+      <!-- <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input">
+          I'm not a Robot
+        </label> -->
+      </div>
+      <button type="button" class="btn ">Place your order</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
   <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
 
 

@@ -8,5 +8,29 @@ $('.seat').hover(
        function(){ $(this).removeClass('hovering') }
 );
 
+var circusSeats = [];
+
+  $('form .btn').on('click', function() {
+var firstName = $('#firstNameInput').val();
+var lastName = $('#lastNameInput').val();
+var seats = $('#chooseNumSeats').val();
+
+    circusSeats.push({
+      'firstName': firstName,
+      'lastName': lastName,
+      'seats': seats,
+    });
+
+  }).on('click', function(){
+console.log(circusSeats);
+
+  });
+
+
+
+
+
+
+
 
 });
