@@ -12,6 +12,8 @@ $('.seat').hover(
             trigger: 'hover',
             content: "this seat is available"
 	});
+
+
 /*.on('click', function(){
 
 $('form').show("slow");
@@ -39,44 +41,45 @@ $('form').hide("slow");
 
 */
 
-
-//this function finds child ID of hovered element and returns into a variable
-/*$('.bench').on('click', '.hovering', function(){
-  var selected = $(".hovering").children("a").attr("id");
-  $('form').show("slow");
-  $('#msg').text('you have selected seat ' + selected);
-  $('form .btn').on('click', function() {
-<<<<<<< HEAD
-	var firstName = $('#firstNameInput').val();
-	var lastName = $('#lastNameInput').val();
-	console.log(firstName + " " + lastName);
-	//alert(selected);
-	});
-
-});*/
+var selected;
 
 
-//less convoluted version of above function
-//click on number shows form
+//click on seat shows form, stores ID of seat to inform potential buyers of row and seat number
 $('.seat > a').on('click', function(){
-	var selected = $(this).attr("id");
-	//console.log(selected);
+	selected = $(this).attr("id");
 	$('form').show("slow");
 	$('#msg').text('you have selected seat ' + selected);
-});
+	//adds a class of checkout so that user is reaffirmed of their choice
+	$(this).parent().addClass("checkout");
+})
 
-
+//once the submit button is clicked, execute the following
 $('form .btn').on('click', function() {
-	var firstName = $('#firstNameInput').val();
-	var lastName = $('#lastNameInput').val();
-	//console.log(firstName + " " + lastName);
-	//alert(selected);
+
+	
+
 		
 	$('form').hide("slow")
-	$("a").attr("id", selected)
+	$('input').val("")
 	console.log(selected)
+	//for each seat that was put into checkout, make them unavailable to other buyers
+	$('.seat').each(function(){
+    if($(this).hasClass('checkout')) {
+        $(this).addClass('disabled').removeClass('checkout');
+    		} 
+		});
 	
 	
 	});
 
 });
+
+
+
+
+
+
+
+
+
+

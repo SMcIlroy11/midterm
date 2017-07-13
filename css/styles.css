@@ -48,6 +48,12 @@ form {
 
 
 .disabled {
-	pointer-events: none;
 	background: red;
+	pointer-events: none;
 }
+
+
+.checkout {
+	background:rgba(0,120,30,.08);
+}
+
