@@ -43,10 +43,9 @@ $('.bench').on('click', '.hovering', function(){
   $('form .btn').on('click', function() {
     var firstName = $('#firstNameInput').val();
     var lastName = $('#lastNameInput').val();
-    
+
     console.log(firstName + " " + lastName + " " + selected);
     //alert(selected);
-
 });
 
 });
