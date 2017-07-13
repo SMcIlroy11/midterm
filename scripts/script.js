@@ -57,21 +57,26 @@ $('form').hide("slow");
 
 
 //less convoluted version of above function
-$('a').on('click', function(){
+//click on number shows form
+$('.seat > a').on('click', function(){
 	var selected = $(this).attr("id");
 	//console.log(selected);
 	$('form').show("slow");
 	$('#msg').text('you have selected seat ' + selected);
- 	$('form .btn').on('click', function() {
+});
+
+
+$('form .btn').on('click', function() {
 	var firstName = $('#firstNameInput').val();
 	var lastName = $('#lastNameInput').val();
 	//console.log(firstName + " " + lastName);
 	//alert(selected);
-		}).on('click', function(){
-			$('form').hide("slow")
-			
-		}); console.log($(this))
-
-	});
+		
+	$('form').hide("slow")
+	$("a").attr("id", selected)
+	console.log(selected)
 	
+	
+	});
+
 });
