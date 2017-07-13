@@ -7,13 +7,13 @@ $('form').hide();
 $('.seat').hover(
        function(){ $(this).addClass('hovering') },
        function(){ $(this).removeClass('hovering') }
-).on('click', function(){
+)/*.on('click', function(){
 
 $('form').show("slow");
 
 
 
-});
+});*/
 
 var circusSeats = [];
 
@@ -34,12 +34,13 @@ $('form').hide("slow");
 
   });
 
-  
+
 //this function finds child ID of hovered element and returns into a variable
 $('.bench').on('click', '.hovering', function(){
   var selected = $(".hovering").children("a").attr("id");
-
-	alert(selected);
+  $('form').show("slow");
+  $('#msg').text('you have selected seat ' + selected);
+	//alert(selected);
 
 });
 
