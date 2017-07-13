@@ -53,12 +53,20 @@ $('.seat > a').on('click', function(){
 	$(this).parent().addClass("checkout");
 })
 
+var circusSeats = [];
+
 //once the submit button is clicked, execute the following
 $('form .btn').on('click', function() {
+  var firstName = $('#firstNameInput').val();
+  var lastName = $('#lastNameInput').val();
 
-	
 
-		
+      circusSeats.push({
+        'firstName': firstName,
+        'lastName': lastName,
+        'seats': selected,
+      });
+
 	$('form').hide("slow")
 	$('input').val("")
 	console.log(selected)
@@ -66,20 +74,10 @@ $('form .btn').on('click', function() {
 	$('.seat').each(function(){
     if($(this).hasClass('checkout')) {
         $(this).addClass('disabled').removeClass('checkout');
-    		} 
+    		}
 		});
-	
-	
+console.log(circusSeats);
+
 	});
 
 });
-
-
-
-
-
-
-
-
-
-
