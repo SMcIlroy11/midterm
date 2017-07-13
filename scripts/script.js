@@ -34,8 +34,15 @@ $('form').hide("slow");
 
   });
 
+  
+//this function finds child ID of hovered element and returns into a variable
+$('.bench').on('click', '.hovering', function(){
+  var selected = $(".hovering").children("a").attr("id");
+
+	alert(selected);
 
 });
 
 
 });
+
