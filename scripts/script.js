@@ -34,3 +34,9 @@ console.log(circusSeats);
 
 
 });
+
+var selected = $('div > div.seat').children("a").attr("id");
+
+$('.seat').click(function() {
+  alert( "id of seat is " + selected);
+});
