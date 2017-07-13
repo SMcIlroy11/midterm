@@ -1,17 +1,7 @@
 $(document).ready(function() {
 
 
-$('form').hide();
 
-//hover over seat and give it a new class
-$('.seat').hover(
-       function(){ $(this).addClass('hovering') },
-       function(){ $(this).removeClass('hovering') }
-).popover({
-			placement: 'bottom',
-            trigger: 'hover',
-            content: "this seat is available"
-	});
 
 
 /*.on('click', function(){
@@ -75,15 +65,23 @@ $('form .btn').on('click', function() {
     if($(this).hasClass('checkout')) {
         $(this).addClass('disabled').removeClass('checkout');
     		}
-		});
+		}).append('<div class = "hoverdiv">info go here</div>');
 console.log(circusSeats);
 
-var seatList = document.getElementById("B5");
+var seatList = document.getElementById("circusSeats");
 for (var i=0; i <circusSeats.length; i++) {
   var reservedSeat = document.createElement("li");
   reservedSeat.innerText = "First Name: " + circusSeats[i].firstName + " and Last name " + circusSeats[i].lastName + " and the seat number is " + circusSeats[i].seats;
 seatList.appendChild(reservedSeat);
 }
 	});
+
+$('form').hide();
+
+//hover over seat and give it a new class
+$('.seat').hover(
+       function(){ $(this).addClass('hovering') },
+       function(){ $(this).removeClass('hovering') }
+)
 
 });

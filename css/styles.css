@@ -49,6 +49,10 @@ form {
 
 .disabled {
 	background: red;
+	position: relative;
+}
+
+.disabled a {
 	pointer-events: none;
 }
 
@@ -57,3 +61,16 @@ form {
 	background:rgba(0,120,30,.08);
 }
 
+.hoverdiv {
+	display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid red;
+    background-color: #eee;
+    z-index: 10;
+}
+
+.disabled:hover > .hoverdiv {
+	display:block;
+}
