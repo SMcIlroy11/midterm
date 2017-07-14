@@ -51,6 +51,7 @@ margin: 0 auto;
 	width: 600px;
 	margin: 0 auto;
 	border-radius: 10px;
+	margin-bottom: 3px;
 
 }
 
@@ -183,4 +184,12 @@ form {
 .disabled:hover > .hoverdiv {
 	display:block;
 	border-radius: 10px;
+}
+
+.pull-left{
+	margin-left: 20px;
+}
+
+.pull-right{
+	margin-right: 20px;
 }
