@@ -33,19 +33,20 @@ margin: 0 auto;
 	background: white;
 	width: 600px;
 	margin: 0 auto;
+	border-radius: 10px;
 
 }
 
 .column-left {
 	position: relative;
-	border: 3px solid black;
+	/*border: 3px solid black;*/
 	float: left;
 	width: 48%;
 }
 
 .column-right {
 	position: relative;
-	border: 3px solid black;
+	/*border: 3px solid black;*/
 	float: right;
 	width: 48%;
 }
