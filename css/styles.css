@@ -124,13 +124,16 @@ form {
   width: 40%;
   margin-left: 10%;
 	color: white;
-	position: relative;
+	position: absolute;
+	top: 50px;
+	left: 0;
+	right: 0;
 	margin: 0 auto;
-	bottom: 575px;
 	background-color: black;
 	border: 1px solid white;
 	padding: 20px;
 	font-family: 'Sancreek', cursive;
+	z-index: 50;
 
 }
 #chooseNumSeats {
