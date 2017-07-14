@@ -13,8 +13,8 @@ $('.seat > a').on('click', function(){
 	$('.seat').removeClass("checkout");
 	$('a').removeClass("checkout");
 	$(this).parent().addClass("checkout");
+	// remove class that is added after form is submitted
 	$('.thankYou2').hide("fast");
-
 })
 //global variables to help make functions and shit work
 
@@ -43,9 +43,8 @@ $('form .btn').on('click', function() {
     var patronName = $('#' + selected).data('firstName');
     //finds the selected anchor and appends a div to its parent containing the selected seat and the name of patron
     $('#' + selected).parent().append('<div class = "hoverdiv"> seat ' + selected + ' reserved by: ' + patronName + ' </div>');
+// Add class/pargraph with patron name and seat reserved and append into the div
 		$('.thank-you').append('<div class="thankYou2"</div><p> Thank you ' + patronName + ' for reserving your seat: ' + selected + ' at Grand Circus!');
-
-
 
 	});
 //sets default state of form to be hidden
@@ -54,7 +53,6 @@ $('form').hide();
 //hover over seat and give it a new class
 $('.seat').hover(
        function(){ $(this).addClass('hovering') },
-       function(){ $(this).removeClass('hovering') }
-)
+       function(){ $(this).removeClass('hovering') })
 
 });

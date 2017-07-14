@@ -4,15 +4,10 @@ body {
 	background-size: cover;
 }
 
-/*@font-face {
-    font-family: circusFont;
-    src: url(Ewert-Regular.tff);*/
-
 h1 {
 	color: white;
 	font-family: 'Sancreek', cursive;
 	text-align: center;
-
 }
 
 .thank-you {
@@ -57,21 +52,18 @@ margin: 0 auto;
 
 .column-left {
 	position: relative;
-	/*border: 3px solid black;*/
 	float: left;
 	width: 48%;
 }
 
 .column-right {
 	position: relative;
-	/*border: 3px solid black;*/
 	float: right;
 	width: 48%;
 }
 
 .bench {
 	display: block;
-	/*border: 3px solid gray;*/
 	margin-bottom: 30px;
 	height: 30px;
 
@@ -87,9 +79,7 @@ margin: 0 auto;
 	background:url("bench.png") no-repeat center center;
 	background-size: contain;
 	z-index: 1;
-	/*height: 30px;*/
 	margin-left: 2px;
-	/*border: 1px solid red;*/
 }
 
 
@@ -140,10 +130,6 @@ form {
 	z-index: 50;
 
 }
-#chooseNumSeats {
-  width: 15%;
-}
-
 
 .disabled {
 	background-color: rgba(237,0,0,0.75);
