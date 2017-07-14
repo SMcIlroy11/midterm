@@ -30,7 +30,7 @@ margin: 0 auto;
 	border-radius: 25px;
 }
 .container {
-	background: white;
+	background-image: url("https://www.textures.com/system/gallery/photos/Soil/Beach/34407/SoilBeach0087_2_download600.jpg");
 	width: 600px;
 	margin: 0 auto;
 	border-radius: 10px;
@@ -82,6 +82,8 @@ margin: 0 auto;
 a{
 	height: 100%;
 	width: 100%;
+	color: red;
+	font-size: 150%;
 }
 
 
