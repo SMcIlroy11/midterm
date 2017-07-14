@@ -82,8 +82,14 @@ margin: 0 auto;
 a{
 	height: 100%;
 	width: 100%;
-	color: red;
+	color: #eee;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-size: 150%;
+}
+
+a:hover {
+	color: #eee;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 
@@ -108,18 +114,25 @@ form {
 
 
 .disabled {
+	background-color: rgba(237,0,0,0.75);
+	background-image:url("bench.png") no-repeat;
 	background-size: contain;
 	position: relative;
+	border-radius:180px;
 	z-index: 200;
 }
 
 .disabled a {
-	/*pointer-events: none;*/
+	pointer-events: none;
 }
 
 
 .checkout {
-	background:rgba(0,120,30,.08);
+	background-color:rgba(0,120,30,.8);
+	background-image:url("bench.png") no-repeat;
+	position: relative;
+	background-size: contain;
+	border-radius: 180px;
 }
 
 .hoverdiv {
@@ -127,8 +140,12 @@ form {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 120%;
+    color: #eee;
+    font-size: 125%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     border: 1px solid red;
-    background-color: #eee;
+    background-color: rgba(100,100,100,.9);
     z-index: 10;
 }
 /* make child of disabled class divs (hoverdiv) appear as block instead of displaying as none */
