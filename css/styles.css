@@ -11,9 +11,21 @@ body {
 h1 {
 	color: white;
 	font-family: 'Sancreek', cursive;
-	text-align: center
+	text-align: center;
+
 }
 
+.thank-you {
+	margin: 0 auto;
+	padding-top: 25px;
+}
+
+p {
+	color: white;
+	font-size: 24px;
+	font-family: 'Sancreek', cursive;
+	text-align: center;
+}
 
 .container-stage {
 width: 80%;
@@ -110,6 +122,7 @@ a:hover {
 
 form {
   width: 40%;
+  margin-left: 10%;
 	color: white;
 	position: relative;
 	margin: 0 auto;
@@ -118,10 +131,8 @@ form {
 	border: 1px solid white;
 	padding: 20px;
 	font-family: 'Sancreek', cursive;
-	z-index: 10;
+
 }
-
-
 #chooseNumSeats {
   width: 15%;
 }
@@ -165,4 +176,5 @@ form {
 /* make child of disabled class divs (hoverdiv) appear as block instead of displaying as none */
 .disabled:hover > .hoverdiv {
 	display:block;
+	border-radius: 50px;
 }

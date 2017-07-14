@@ -13,6 +13,7 @@ $('.seat > a').on('click', function(){
 	$('.seat').removeClass("checkout");
 	$('a').removeClass("checkout");
 	$(this).parent().addClass("checkout");
+
 })
 //global variables to help make functions and shit work
 
@@ -39,6 +40,8 @@ $('form .btn').on('click', function() {
     var patronName = $('#' + selected).data('firstName');
     //finds the selected anchor and appends a div to its parent containing the selected seat and the name of patron
     $('#' + selected).parent().append('<div class = "hoverdiv"> seat ' + selected + ' reserved by: ' + patronName + ' </div>');
+		$('.thank-you').append('<p> Thank you ' + patronName + ' for reserving your seat: ' + selected + ' at Grand Circus!');
+
 
 
 	});
