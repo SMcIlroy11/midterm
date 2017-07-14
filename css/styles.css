@@ -4,8 +4,13 @@ body {
 	background-size: cover;
 }
 
+/*@font-face {
+    font-family: circusFont;
+    src: url(Ewert-Regular.tff);*/
+
 h1 {
 	color: white;
+	font-family: 'Sancreek', cursive;
 }
 
 
@@ -84,6 +89,7 @@ a{
 	color: #eee;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-size: 150%;
+		font-family: 'Sancreek', cursive;
 }
 
 a:hover {
@@ -102,15 +108,16 @@ a:hover {
 }
 
 form {
-  width: 30%;
+  width: 40%;
   margin-left: 10%;
 	color: white;
 	position: absolute;
 	top: 60px;
-	margin-left: 35%;
+	margin-left: 32%;
 	background-color: black;
 	border: 1px solid white;
 	padding: 20px;
+	font-family: 'Sancreek', cursive;
 
 }
 #chooseNumSeats {
