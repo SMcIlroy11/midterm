@@ -71,8 +71,9 @@ margin: 0 auto;
 .bench {
 	display: block;
 	/*border: 3px solid gray;*/
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	height: 30px;
+
 }
 
 .seat {
@@ -89,6 +90,8 @@ margin: 0 auto;
 	margin-left: 2px;
 	/*border: 1px solid red;*/
 }
+
+
 
 .img-seat {
 	width: 100%;
