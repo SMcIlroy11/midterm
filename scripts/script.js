@@ -41,7 +41,7 @@ $('form .btn').on('click', function() {
    	$('#' + selected).data('firstName', firstName)
     //patron = $(this).data();
     var patronName = $('#' + selected).data('firstName')
-    $('#' + selected).parent().append('<div class = "hoverdiv">' + patronName + ' </div>') 
+    $('#' + selected).parent().append('<div class = "hoverdiv"> seat ' + selected + ' reserved by: ' + patronName + ' </div>') 
     console.log(patronName)
    
 		 
