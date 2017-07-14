@@ -182,5 +182,5 @@ form {
 /* make child of disabled class divs (hoverdiv) appear as block instead of displaying as none */
 .disabled:hover > .hoverdiv {
 	display:block;
-	border-radius: 50px;
+	border-radius: 10px;
 }
