@@ -28,28 +28,26 @@ $('form .btn').on('click', function() {
         'seats': selected,
       }); */
 
-	$('form').hide("slow")
-	$('input').val("")
-	console.log(selected)
+	$('form').hide("slow");
+	//clears the form inputs upon being hidden
+	$('input').val("");
+
 	//for each seat that was put into checkout, make them unavailable to other buyers
 	$('.seat').each(function(){
     if($(this).hasClass('checkout')) { //change classes after values are submitted
         $(this).addClass('disabled').removeClass('checkout');
         }
 	});
-	//append new div to hover over reserved seats with patron name in it
-   	$('#' + selected).data('firstName', firstName)
-    //patron = $(this).data();
-    var patronName = $('#' + selected).data('firstName')
-    $('#' + selected).parent().append('<div class = "hoverdiv"> seat ' + selected + ' reserved by: ' + patronName + ' </div>') 
-    console.log(patronName)
-   
-		 
-	
-	console.log(selected);
+	//sets data attribute of the selected anchor as user inputted form info
+   	$('#' + selected).data('firstName', firstName);
+   	//declares the variable patron name to be whatever was input
+    var patronName = $('#' + selected).data('firstName');
+    //finds the selected anchor and appends a div to its parent containing the selected seat and the name of patron
+    $('#' + selected).parent().append('<div class = "hoverdiv"> seat ' + selected + ' reserved by: ' + patronName + ' </div>');
+
 
 	});
-
+//sets default state of form to be hidden
 $('form').hide();
 
 //hover over seat and give it a new class
