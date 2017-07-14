@@ -6,11 +6,14 @@ var selected;
 
 //click on seat shows form, stores ID of seat to inform potential buyers of row and seat number
 $('.seat > a').on('click', function(){
+	$(this).toggleClass("checkout");
 	selected = $(this).attr("id");
 	$('form').show("slow");
 	$('#msg').text('you have selected seat ' + selected);
 	//adds a class of checkout so that user is reaffirmed of their choice
-	$(this).parent().addClass("checkout");
+	$('.seat').removeClass("checkout");
+	$('a').removeClass("checkout");
+	$(this).parent().toggleClass("checkout");
 })
 //global variables to help make functions and shit work
 var circusSeats = [];
