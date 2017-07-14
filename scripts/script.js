@@ -22,11 +22,11 @@ $('form .btn').on('click', function() {
   var lastName = $('#lastNameInput').val();
 
 
-      circusSeats.push({
+/*      circusSeats.push({
         'firstName': firstName,
         'lastName': lastName,
         'seats': selected,
-      });
+      }); */
 
 	$('form').hide("slow")
 	$('input').val("")
@@ -34,10 +34,18 @@ $('form .btn').on('click', function() {
 	//for each seat that was put into checkout, make them unavailable to other buyers
 	$('.seat').each(function(){
     if($(this).hasClass('checkout')) { //change classes after values are submitted
-        $(this).addClass('disabled').removeClass('checkout').data("firstname", firstName);
-        patron = $(this).data(); console.log(patron)
-    		} //append new div to hover over reserved seats with patron name in it
-		}).append('<div class = "hoverdiv">' + patron.firstname + ' </div>');
+        $(this).addClass('disabled').removeClass('checkout');
+        }
+	});
+	//append new div to hover over reserved seats with patron name in it
+   	$('#' + selected).data('firstName', firstName).parent().append('<div class = "hoverdiv">' + patronName + ' </div>') 
+    //patron = $(this).data();
+    var patronName = $('#' + selected).data('firstName')
+    console.log(patronName)
+   
+		 
+	
+	console.log(selected);
 
 	});
 
