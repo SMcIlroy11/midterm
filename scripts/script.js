@@ -24,6 +24,8 @@ var patron;
 $('form .btn').on('click', function() {
   var firstName = $('#firstNameInput').val();
   var lastName = $('#lastNameInput').val();
+  var confirmationSound = $('#whipcrack')[0];
+  confirmationSound.play();
 
 	$('form').hide("slow");
 	//clears the form inputs upon being hidden
