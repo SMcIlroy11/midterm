@@ -38,9 +38,10 @@ $('form .btn').on('click', function() {
         }
 	});
 	//append new div to hover over reserved seats with patron name in it
-   	$('#' + selected).data('firstName', firstName).parent().append('<div class = "hoverdiv">' + patronName + ' </div>') 
+   	$('#' + selected).data('firstName', firstName)
     //patron = $(this).data();
     var patronName = $('#' + selected).data('firstName')
+    $('#' + selected).parent().append('<div class = "hoverdiv">' + patronName + ' </div>') 
     console.log(patronName)
    
 		 
