@@ -8,27 +8,20 @@ var selected;
 $('.seat > a').on('click', function(){
 	selected = $(this).attr("id");
 	$('form').show("slow");
-	$('#msg').text('you have selected seat ' + selected);
+	$('#msg').text(selected);
 	//adds a class of checkout so that user is reaffirmed of their choice
 	$('.seat').removeClass("checkout");
 	$('a').removeClass("checkout");
 	$(this).parent().addClass("checkout");
 })
 //global variables to help make functions and shit work
-var circusSeats = [];
+
 var patron;
 
 //once the submit button is clicked, execute the following
 $('form .btn').on('click', function() {
   var firstName = $('#firstNameInput').val();
   var lastName = $('#lastNameInput').val();
-
-
-/*      circusSeats.push({
-        'firstName': firstName,
-        'lastName': lastName,
-        'seats': selected,
-      }); */
 
 	$('form').hide("slow");
 	//clears the form inputs upon being hidden
