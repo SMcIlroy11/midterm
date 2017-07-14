@@ -5,7 +5,7 @@ var selected;
 
 
 //click on seat shows form, stores ID of seat to inform potential buyers of row and seat number
-$('.seat > img').on('click', function(){
+$('.seat > a').on('click', function(){
 	selected = $(this).attr("id");
 	$('form').show("slow");
 	$('#msg').text('you have selected seat ' + selected);
