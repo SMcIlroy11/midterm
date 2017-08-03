@@ -1,6 +1,5 @@
 body {
-	/*background-image: url("https://s-media-cache-ak0.pinimg.com/originals/90/c0/ab/90c0abc2f827ed700342aaf8dc827345.jpg");*/
-	background-color: black;
+	background-color:#08010D;
 	background-size: cover;
 }
 
@@ -18,35 +17,34 @@ h1 {
 p {
 	color: white;
 	font-size: 24px;
-	font-family: 'Sancreek', cursive;
+	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 }
 
 .container-stage {
-width: 80%;
+width: 70%;
 height: 400px;
 margin: 0 auto;
 }
 
 .container-break {
 	width: 100%;
-	height: 50px;
+	height: 15px;
 }
 
 .container-stage .img {
-	text-align: center;
 	margin: 0 auto;
 	width: 100%;
-	height: 400px;
-	margin-left: 2px;
-	border-radius: 25px;
+	height: 350px;
+	border-radius: 20px;
 }
 .container {
-	background-image: url("https://www.textures.com/system/gallery/photos/Soil/Beach/34407/SoilBeach0087_2_download600.jpg");
-	width: 600px;
+	background-image: url("http://happygumbo.files.wordpress.com/2012/04/beach_sand_2_by_eddieretelj.jpg");
+	width: 65%;
 	margin: 0 auto;
 	border-radius: 10px;
-	margin-bottom: 3px;
+	margin-bottom: 5%;;
+
 
 }
 
@@ -64,8 +62,8 @@ margin: 0 auto;
 
 .bench {
 	display: block;
-	margin-bottom: 30px;
-	height: 30px;
+	margin-bottom: 8%;
+	height: 40px;
 
 }
 
@@ -87,7 +85,7 @@ margin: 0 auto;
 .img-seat {
 	width: 100%;
 	z-index: .5;
-	height: 30px;
+	height: 40px;
 }
 
 a{
@@ -96,7 +94,7 @@ a{
 	color: #eee;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	font-size: 150%;
-		font-family: 'Sancreek', cursive;
+		font-family: 'Open Sans', sans-serif;
 }
 
 a:hover {
@@ -107,11 +105,13 @@ a:hover {
 
 
 .hovering {
-	background-color: rgba(237,245,0,0.75);
+	background-color: #6F4194;
 	background-image:url("bench.png") no-repeat;
 	background-size: contain;
 	z-index: 0;
 	border-radius: 180px;
+	transition: 5px;
+	opacity: 0.8;
 }
 
 form {
@@ -126,17 +126,17 @@ form {
 	background-color: black;
 	border: 1px solid white;
 	padding: 20px;
-	font-family: 'Sancreek', cursive;
+	font-family: 'Open Sans', sans-serif;
 	z-index: 50;
 
 }
 
 .disabled {
-	background-color: rgba(237,0,0,0.75);
+	background-color: #090606;
 	background-image:url("bench.png") no-repeat;
 	background-size: contain;
 	position: relative;
-	border-radius:180px;
+	border-radius:120px;
 	z-index: 200;
 }
 
@@ -146,11 +146,11 @@ form {
 
 
 .checkout {
-	background-color:rgba(0,120,30,.8);
+	background-color:#ED2207;
 	background-image:url("bench.png") no-repeat;
 	position: relative;
 	background-size: contain;
-	border-radius: 180px;
+	border-radius: 120px;
 }
 
 .hoverdiv {
@@ -163,7 +163,7 @@ form {
     font-size: 125%;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     border: 1px solid red;
-    background-color: rgba(100,100,100,.9);
+    background-color: black;
     z-index: 10;
 }
 /* make child of disabled class divs (hoverdiv) appear as block instead of displaying as none */
