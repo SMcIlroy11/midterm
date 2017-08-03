@@ -16,7 +16,7 @@ h1 {
 
 p {
 	color: white;
-	font-size: 24px;
+	font-size: 150%;
 	font-family: 'Open Sans', sans-serif;
 	text-align: center;
 }
@@ -102,7 +102,9 @@ a:hover {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-
+input {
+	width: 80%;
+}
 
 .hovering {
 	background-color: #6F4194;
@@ -165,12 +167,19 @@ form {
     border: 1px solid red;
     background-color: black;
     z-index: 10;
+		padding: 10px;
 }
 /* make child of disabled class divs (hoverdiv) appear as block instead of displaying as none */
 .disabled:hover > .hoverdiv {
 	display:block;
 	border-radius: 10px;
 }
+
+a:link{
+	color: #eee;
+}
+
+
 
 .pull-left{
 	margin-left: 20px;
